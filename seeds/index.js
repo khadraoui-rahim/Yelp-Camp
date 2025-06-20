@@ -23,7 +23,7 @@ const getRandomImageUrl = async () => {
             'https://api.unsplash.com/photos/random?collections=l6GSRgLvoZc&count=1',
             {
                 headers: {
-                    Authorization: 'Client-ID NySjicYh_mledIPZf3YHKefZkqSM4wWMd1OeUmD0-vw'
+                    Authorization: 'Client-ID jfN-AOtFtFWsGt5PiovalTUHnwIawd3UhTNJwb35Zl0'
                 }
             }
         );
@@ -47,7 +47,7 @@ const seedDB = async () => {
             location: `${cities[random1000].city}, ${cities[random1000].state}`,
             description:
                 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
-            image: imageUrl // 🔹 store image URL string
+            image: imageUrl// 🔹 store image URL string     
         });
 
         await camp.save();
